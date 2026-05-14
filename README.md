@@ -67,12 +67,13 @@ def handle_quote(quote):
 cap.stream_quotes(["BITCOIN"], handle_quote, run_seconds=20)
 ```
 📋 API Functionality Overview
-Method,Description
-login(),Authenticates and retrieves security tokens (CST & SEC).
-ping(),Keeps the REST session active to avoid timeouts.
-search_markets(term),Finds instrument EPICs based on a search string.
-place_market_order(),Executes a trade with optional Stop/Profit distances.
-stream_quotes(),Opens a persistent WebSocket for live price action.
+| Method | Description |
+| :--- | :--- |
+| `login()` | Authenticates and retrieves security tokens (`CST` & `SEC`). |
+| `ping()` | Keeps the REST session active to avoid timeouts. |
+| `search_markets(term)` | Finds instrument EPICs based on a search string. |
+| `place_market_order()` | Executes a trade with optional Stop/Profit distances. |
+| `stream_quotes()` | Opens a persistent WebSocket for live price action. |
 
 
 ⚠️ Disclaimer
